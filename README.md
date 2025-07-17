@@ -19,17 +19,18 @@ A modern, responsive chat interface powered by **Google's Gemini AI**. This appl
 
 ## 🛠️ Tech Stack
 
-- https://nextjs.org/ (Next.js App Router)
-- https://reactjs.org/ (React.js)
-- https://tailwindcss.com/ (Tailwind CSS)
-- https://ai.google.dev/ (Google Gemini API)
-- https://react-icons.github.io/react-icons/ (React Icons)
-- https://www.typescriptlang.org/ (TypeScript)
+- [Next.js](https://nextjs.org/) (App Router)
+- [React.js](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Google Gemini API](https://ai.google.dev/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [TypeScript](https://www.typescriptlang.org/)
 
 ---
 
 ## 📁 Folder Structure
 
+```
 Gemini-AI-ChatBot/
 ├── app/
 │   ├── globals.css
@@ -53,6 +54,7 @@ Gemini-AI-ChatBot/
 ├── tailwind.config.ts
 ├── tsconfig.json
 └── README.md
+```
 
 ---
 
@@ -67,27 +69,34 @@ Gemini-AI-ChatBot/
 ### 📦 Installation
 
 1. Clone the repository:
-git clone https://github.com/Shanidhya01/Ai-ChatBot.git
-cd Ai-ChatBot
+    ```sh
+    git clone https://github.com/Shanidhya01/Ai-ChatBot.git
+    cd Ai-ChatBot
+    ```
 
 2. Install dependencies:
-npm install
-# or
-yarn install
-# or
-pnpm install
+    ```sh
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
 
-3. Create a .env.local file and add:
-GEMINI_API_KEY=your_google_gemini_api_key
+3. Create a `.env.local` file and add:
+    ```
+    GEMINI_API_KEY=your_google_gemini_api_key
+    ```
 
 4. Start the development server:
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-
-Visit: http://localhost:3000
+    ```sh
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    ```
+    Visit: [http://localhost:3000](http://localhost:3000)
 
 ---
 
@@ -102,9 +111,9 @@ Visit: http://localhost:3000
 ## 🚀 Deployment
 
 Deploy with platforms like:
-- https://vercel.com/
-- https://www.netlify.com/
-- https://render.com/
+- [Vercel](https://vercel.com/)
+- [Netlify](https://www.netlify.com/)
+- [Render](https://render.com/)
 
 ---
 
@@ -126,5 +135,5 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## 📫 Contact
 
-- GitHub: https://github.com/Shanidhya01
+- GitHub: [https://github.com/Shanidhya01](https://github.com/Shanidhya01)
 - Email: luckykumar0011s@gmail.com.com
