@@ -67,8 +67,8 @@ Gemini-AI-ChatBot/
 ### 📦 Installation
 
 1. Clone the repository:
-git clone https://github.com/yourusername/gemini-ai-chatbot.git
-cd gemini-ai-chatbot
+git clone https://github.com/Shanidhya01/Ai-ChatBot.git
+cd Ai-ChatBot
 
 2. Install dependencies:
 npm install
