@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
@@ -11,8 +11,6 @@ export const metadata: Metadata = {
   description: "A stunning AI chatbot powered by Google Gemini with beautiful dark/light themes",
   keywords: ["AI", "chatbot", "Gemini", "Google AI", "Next.js", "dark mode", "beautiful UI"],
   authors: [{ name: "Your Name" }],
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
-  themeColor: "#2563eb",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -23,6 +21,16 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
 }
+
+// Move viewport and themeColor to their own exports
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: "no",
+}
+
+export const themeColor = "#2563eb"
 
 export default function RootLayout({
   children,
