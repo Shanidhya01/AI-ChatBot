@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai"
 import type { NextRequest } from "next/server"
 
-const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY!)
+const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY_1! || process.env.GOOGLE_API_KEY_2! || process.env.GOOGLE_API_KEY_3!)
 
 // Available Gemini models (in order of preference)
 const AVAILABLE_MODELS = ["gemini-1.5-flash", "gemini-1.5-pro", "gemini-1.0-pro"]
@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
   try {
     const { messages } = await req.json()
 
-    if (!process.env.GOOGLE_API_KEY) {
+    if (!process.env.GOOGLE_API_KEY_1 && !process.env.GOOGLE_API_KEY_2 && !process.env.GOOGLE_API_KEY_3) {
       return new Response(JSON.stringify({ error: "Google API key not configured" }), {
         status: 500,
         headers: { "Content-Type": "application/json" },
@@ -36,7 +36,7 @@ export async function POST(req: NextRequest) {
             temperature: 0.7,
             topK: 40,
             topP: 0.95,
-            maxOutputTokens: 1024,
+            maxOutputTokens: 8904,
           },
         })
         break // Successfully created model
